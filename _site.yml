@@ -1,0 +1,38 @@
+name: サイトタイトル
+navbar:
+  title: Tomokoba
+  left:
+  - text: お知らせ
+    href: news.html
+  - text: 経歴
+    href: history.html
+  - text: 報告
+    href: report.html
+  - text: メモ
+    href: memo.html
+#  right:
+#  - text: jsのテスト
+#    href: js_test.html
+#  - text: Rでhtml生成
+#    href: html_gene.html
+#  - text: タグチェック用
+#    href: id_class_check.html
+#  - text: gridレイアウト用
+#    href: grid_test.html
+#  - text: cssチェック用
+#    href: css_test.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    toc: yes
+    toc_float:
+      collapse: no
+    df_print: kable
+    include:
+      after_body: footer.html
+    css: site_style.css
+    lib_dir: site_libs
+    self_contained: no
+output_dir: docs
+

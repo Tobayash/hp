@@ -1,0 +1,47 @@
+---
+title: 
+output:
+  html_document:
+    toc: false
+    css: a_style.css
+---
+
+```{css echo=FALSE}
+.main-container {
+max-width: 100%;
+}
+```
+
+```{r echo=FALSE,out.width="100%",margin.left="0px",margin.right="0px"}
+library(knitr)
+library(ggplot2)
+library(jpeg)
+
+topimag<-"images/picture.jpg"
+timag<-readJPEG(topimag)
+include_graphics(topimag)
+```
+
+
+
+```{r echo=FALSE}
+knitr::asis_output(htmltools::htmlPreserve("
+<div class='row'>
+  <div class='col-md-8'>
+    <h2 class='about'>ABOUT
+    </h2>
+    <p>学部時代に社会心理学の面白さにはまり、これまで集団間葛藤に対するアプローチについて研究してきました</p>
+    <p>専門：メタステレオタイプ、ステレオタイプ、集団間葛藤</p>
+    <p>趣味：カフェ、温泉、山、美術館</p>
+  </div>
+  <div class='col-md-3'>
+    <h2 class='news'>お知らせ
+    </h2>
+    <p>2018.4.7 開設しました</p>
+    <p>RでHP作り奮闘中。。</p>
+  </div>
+</div>
+"))
+```
+
+*****

@@ -1,0 +1,17 @@
+---
+title: お知らせ
+output:
+  html_document:
+    toc: false
+    css: site_style.css
+---
+
+```{r echo=FALSE}
+knitr::asis_output(htmltools::htmlPreserve("
+  <div class='block1'>
+    <h2 class='news'>2018年
+    </h2>
+    <p>4月7日&emsp;開設しました</p>
+  </div>
+"))
+```
